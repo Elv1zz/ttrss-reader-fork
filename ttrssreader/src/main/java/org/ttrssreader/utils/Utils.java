@@ -35,7 +35,6 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Handler;
 import android.os.Vibrator;
-import android.support.v4.net.ConnectivityManagerCompat;
 import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
@@ -59,6 +58,8 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.Set;
 import java.util.regex.Pattern;
+
+import androidx.core.net.ConnectivityManagerCompat;
 
 public class Utils {
 

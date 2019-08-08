@@ -21,8 +21,6 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 import android.os.Process;
-import android.support.annotation.MainThread;
-import android.support.annotation.WorkerThread;
 
 import java.util.ArrayDeque;
 import java.util.concurrent.BlockingQueue;
@@ -38,6 +36,9 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
+
+import androidx.annotation.MainThread;
+import androidx.annotation.WorkerThread;
 
 /**
  * see @android.os.AsyncTask

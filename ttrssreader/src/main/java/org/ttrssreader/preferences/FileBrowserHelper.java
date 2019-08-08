@@ -25,7 +25,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
-import android.support.v4.content.FileProvider;
 import android.text.InputType;
 import android.widget.EditText;
 
@@ -34,6 +33,8 @@ import org.ttrssreader.R;
 import org.ttrssreader.controllers.Controller;
 
 import java.io.File;
+
+import androidx.core.content.FileProvider;
 
 /**
  * Copied from https://code.google.com/p/k9mail/
