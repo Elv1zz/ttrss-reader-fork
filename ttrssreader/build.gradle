@@ -21,7 +21,7 @@ android {
     buildToolsVersion '28.0.3'
 
     defaultConfig {
-        applicationId 'org.ttrssreader'
+        applicationId 'net.elvizz.ttrssreader'
         minSdkVersion 14
         targetSdkVersion 25
     }
