@@ -72,5 +72,5 @@ dependencies {
     // "Updating Your Security Provider to Protect Against SSL Exploits"
     // https://developer.android.com/training/articles/security-gms-provider.html
     // Only used in productFlavour "play"
-    playImplementation 'com.google.android.gms:play-services-base:15.0.1'
+    playImplementation 'com.google.android.gms:play-services-base:17.1.0'
 }
