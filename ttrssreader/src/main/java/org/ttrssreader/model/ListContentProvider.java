@@ -29,7 +29,7 @@ public class ListContentProvider extends ContentProvider {
 
 	@SuppressWarnings("unused")
 	private static final String TAG = ListContentProvider.class.getSimpleName();
-	private static final String AUTHORITY = "org.ttrssreader";
+	private static final String AUTHORITY = "net.elvizz.ttrssreader";
 
 	// Uri path segments
 	private static final int CATS = 1;

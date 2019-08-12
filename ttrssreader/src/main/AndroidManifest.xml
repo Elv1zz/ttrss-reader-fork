@@ -62,7 +62,7 @@
         android:supportsRtl="true">
         <provider
             android:name=".model.ListContentProvider"
-            android:authorities="org.ttrssreader"
+            android:authorities="net.elvizz.ttrssreader"
             android:exported="false">
         </provider>
         <provider
