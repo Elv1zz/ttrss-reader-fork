@@ -38,11 +38,17 @@ public class UpdateController {
 	}
 
 	private static class InstanceHolder {
-		private static final UpdateController instance = new UpdateController();
+		private static UpdateController instance;
+
+		static UpdateController getInstance() {
+			if (instance == null)
+				instance = new UpdateController();
+			return instance;
+		}
 	}
 
 	public static UpdateController getInstance() {
-		return InstanceHolder.instance;
+		return InstanceHolder.getInstance();
 	}
 
 	private static class UpdateControllerHandler extends Handler {

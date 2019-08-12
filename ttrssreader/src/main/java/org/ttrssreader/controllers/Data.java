@@ -84,12 +84,12 @@ public class Data {
 		categoriesChanged = 0;
 	}
 
-	private static class InstanceHolder {
-		private static final Data instance = new Data();
-	}
+	private static Data instance ;
 
 	public static Data getInstance() {
-		return InstanceHolder.instance;
+		if (instance == null)
+			instance = new Data();
+		return instance;
 	}
 
 	public synchronized void initialize(final Context context) {

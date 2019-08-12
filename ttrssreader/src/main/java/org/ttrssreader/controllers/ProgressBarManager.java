@@ -32,12 +32,12 @@ public class ProgressBarManager {
 	private ProgressBarManager() {
 	}
 
-	private static class InstanceHolder {
-		private static final ProgressBarManager instance = new ProgressBarManager();
-	}
+	private static ProgressBarManager instance;
 
 	public static synchronized ProgressBarManager getInstance() {
-		return InstanceHolder.instance;
+		if (instance == null)
+			instance = new ProgressBarManager();
+		return instance;
 	}
 
 	public void addProgress(MenuActivity activity) {

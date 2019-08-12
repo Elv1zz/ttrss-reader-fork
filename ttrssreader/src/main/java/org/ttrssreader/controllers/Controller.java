@@ -178,12 +178,12 @@ public class Controller extends Constants implements OnSharedPreferenceChangeLis
 	private Controller() {
 	}
 
-	private static class InstanceHolder {
-		private static final Controller instance = new Controller();
-	}
+	private static Controller instance;
 
 	public static Controller getInstance() {
-		return InstanceHolder.instance;
+		if (instance == null)
+			instance = new Controller();
+		return instance;
 	}
 
 	public void initialize(final Context context) {

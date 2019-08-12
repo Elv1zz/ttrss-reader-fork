@@ -213,12 +213,12 @@ public class DBHelper {
 	private DBHelper() {
 	}
 
-	private static class InstanceHolder {
-		private static final DBHelper instance = new DBHelper();
-	}
+	private static DBHelper instance;
 
 	public static DBHelper getInstance() {
-		return InstanceHolder.instance;
+		if (instance == null)
+			instance = new DBHelper();
+		return instance;
 	}
 
 	public synchronized void initialize(final Context context) {
